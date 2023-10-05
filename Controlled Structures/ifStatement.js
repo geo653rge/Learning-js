@@ -54,3 +54,32 @@ let numero = 0 ;
 let result = numero >= 0 ? "Positive" : "Negative" ;
 
 console.log(`The number is ${result}`);
+
+//using For loop to iterate for even numbers from 0 to 10
+
+for (let i = 0; i <= 10 ; i++) {
+
+    if (i % 2===0)
+    {
+        console.log(i);
+    }
+}
+
+//Using Break to Exit a loop
+//The Break statement terminate the current loop , switch , or label statement and 
+//transfer program control to the statement following the terminted statement.
+//The break statement includes an optional label that allows the program to break out of a labeled statement.
+
+
+let collection = ["x","y",3,5,"a"];
+let containsNumber = false;
+for(i = 0; i < collection.length; i++){
+
+if (typeof collection[i] === "number") {
+    containsNumber = true;
+    console.log("The number found is:" + collection[i]);
+    break;
+}
+}
+
+
